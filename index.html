@@ -9,40 +9,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link rel="stylesheet" href="style/style.css">
      </head>
      <body>
-
-    <!-- Header / Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo">amg</div>
+     <header>
+        <div class="header-inner">
+            <h1 class="logo">amg<span>.</span></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="menu-toggle">&#9776;</div>
             </nav>
         </div>
     </header>
+    <main>
 
-    <!-- Hero / Elevator Pitch -->
-    <section class="hero">
-        <div class="container">
-            <h1>Hi, I’m Allecksis</h1>
-            <p>I am a web design student passionate about creating .</p>
-            <div class="cta-buttons">
-                <a href="resume.html" class="btn">View Resume</a>
-                <a href="projects.html" class="btn btn-outline">See Projects</a>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="hero-inner">
+                <h2>Hello, <br> I’m Allecksis</h2>
+                <p>Short intro or elevator pitch goes here.</p>
+                <a href="#portfolio" class="cta-btn">View My Work</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Your short bio here. Skills, interests, experience…</p>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-grid">
+                <article class="project-card">Project 1</article>
+                <article class="project-card">Project 2</article>
+                <article class="project-card">Project 3</article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: magulley@ualr.edu</p>
+        </section>
+
+    </main>
     <footer>
         <div class="container">
             <p>© 2025 Allecksis Gulley. All rights reserved.</p>
