@@ -17,8 +17,7 @@ body {
 
 /* Header */
 header {
-    background: #fafafa;
-    border-bottom: 1px solid #ddd;
+    background: #0a0808;
 }
 
 .header-inner {
@@ -28,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -49,7 +49,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #dcdcdc;
     font-weight: 500;
 }
 
@@ -60,54 +60,64 @@ main {
 
 section {
     padding: 4rem 1rem;
-    max-width: 1100px;
     margin: 0 auto;
 }
 
 /* Hero*/
 .hero {
-    background-image: url(../img/hero-bluebox.webp);
-    text-align: center;
-    padding: 6rem 1rem;
-    max-width:100%;
-    min-height: 70vh;
-    background-position: center;
-    background-size: cover;
+    background: #000;
+    padding: 4rem 0;
 }
 
-.hero-inner h2 {
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
     font-size: 5rem;
-    text-align: left;
-    color:white;
-    padding-left:130px;
-    margin-top:100px;
-}
-
-.hero p {
-    color:whitesmoke;
-    text-align:left;
-    padding-left:130px;
-    width:57%;
-    font-size:1.2rem;
-    line-height:1.8rem;
-}
-
-.hero-inner a {
-    text-align:left;
-}
-.cta-btn {
-    display: block;
-    padding-top:12px;
-    padding-left:50px;
-    padding-bottom:12px;
-    margin-top: 1.5rem;
-    margin-left:130px;
-    background: #333;
     color: white;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    color: #ddd;
+    font-size: 1.2rem;
+    max-width: 85%;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 4px;
-    width:200px;
-    ;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #e34234;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 /* Portfolio */
@@ -134,4 +144,136 @@ footer {
     text-align: center;
     padding: 1rem;
     border-top: 1px solid #ddd;
+}
+
+/* Resume */
+.resume-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    line-height: 1.7;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header section */
+.resume-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.resume-header p a {
+    color: #333;
+}
+
+.resume-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Resume Buttons */
+.resume-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+.resume-btn:hover {
+    background: #111;
+}
+
+/* Section styling */
+.resume-section {
+    margin: 3rem 0;
+}
+
+.resume-section h2 {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 3rem 0;
+}
+
+/* Experience, Education Items */
+.resume-item {
+    margin-bottom: 2rem;
+}
+
+.resume-item h3 {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.resume-item h3 span {
+    font-weight: 400;
+    color: #666;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.resume-item .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.7rem;
+}
+
+.resume-item ul {
+    margin-left: 1.2rem;
+    list-style: disc;
+}
+
+.resume-item ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Skills */
+.resume-section p {
+    font-size: 1rem;
+}
+
+/* MOBILE Resume */
+
+@media (max-width: 600px) {
+
+    .resume-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .resume-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resume-item h3 {
+        font-size: 1.1rem;
+    }
 }

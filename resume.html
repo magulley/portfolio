@@ -3,47 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Allecksis Gulley</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Resume – Marqeeta Gulley</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Your CSS -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">amg</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html" class="active">Resume</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">&#9776;</div>
-        </nav>
-    </div>
-</header>
+    <!-- HEADER (same structure as homepage) -->
+    <header>
+        <div class="header-inner">
+            <h1 class="logo">amg<span>.</span></h1>
 
-<section class="page-content">
-    <div class="container">
-        <h1>Resume</h1>
-        <iframe src="pdf/resume.pdf" width="100%" height="800px"></iframe>
-        <p><a href="pdf/resume.pdf" target="_blank" class="btn btn-outline">Download Resume</a></p>
-    </div>
-</section>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<footer>
-    <div class="container">
-        <p>© 2025 Allecksis Gulley. All rights reserved.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/marqeeta-gulley-37abab398/" target="_blank">LinkedIn</a> | 
-            <a href="mailto:magulley@ualr.edu">Email</a>
-        </p>
-    </div>
-</footer>
 
-<script src="js/main.js"></script>
+    <main class="resume-page">
+
+        <section class="resume-header">
+            <h1>Marqeeta Gulley</h1>
+
+            <p>Email: <a href="mailto:magulley@ualr.edu">magulley@ualr.edu</a></p>
+            <p>Phone: 501-529-1232</p>
+
+            <div class="resume-links">
+                <a class="resume-btn" href="#" download>Download PDF</a>
+                <a class="resume-btn" href="#" download>Download Word</a>
+                <a class="resume-btn" href="https://www.linkedin.com" target="_blank">Visit LinkedIn</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SUMMARY -->
+        <section class="resume-section">
+            <h2>Professional Summary</h2>
+            <p>
+                Air Force veteran and former Mental Health Technician with eight years 
+                of experience in leadership, teamwork, and community-centered care. 
+                Skilled in supporting mission readiness while supervising and mentoring 
+                junior airmen.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIENCE -->
+        <section class="resume-section">
+            <h2>Experience</h2>
+
+            <article class="resume-item">
+                <h3>Alcohol and Drug Abuse Counselor  
+                    <span>United States Air Force – Offutt AFB, Nebraska</span>
+                </h3>
+                <p class="date">Jan 2016 – Jan 2022</p>
+
+                <ul>
+                    <li>Performed patient counseling using trained skills to assist individuals and groups in achieving treatment goals.</li>
+                    <li>Developed and executed treatment plans under supervision of privileged provider.</li>
+                </ul>
+            </article>
+
+            <article class="resume-item">
+                <h3>Mental Health Technician  
+                    <span>United States Air Force – Okinawa AB, Japan</span>
+                </h3>
+                <p class="date">Feb 2014 – Jan 2016</p>
+
+                <ul>
+                    <li>Supported mental health services across psychiatry, psychology, social work, and substance abuse prevention.</li>
+                </ul>
+            </article>
+
+            <article class="resume-item">
+                <h3>Clerk & Pharmacy Technician  
+                    <span>Medic Pharmacy – Little Rock, Arkansas</span>
+                </h3>
+                <p class="date">Aug 2011 – Jan 2014</p>
+
+                <ul>
+                    <li>Processed transactions, managed payments, and provided excellent customer service.</li>
+                    <li>Promoted to pharmacy technician and assisted with prescriptions, inventory, and patient support.</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- EDUCATION -->
+        <section class="resume-section">
+            <h2>Education</h2>
+
+            <article class="resume-item">
+                <h3>University of Arkansas at Little Rock</h3>
+                <p class="date">Jan 2023 – Present</p>
+                <p>Bachelor of Arts – Web Development & Design</p>
+            </article>
+
+            <article class="resume-item">
+                <h3>Community College of the Air Force</h3>
+                <p class="date">Feb 2014 – Feb 2016</p>
+                <p>Associate of Applied Science – Mental Health Services</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS -->
+        <section class="resume-section">
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, Adobe Suite, Figma, Canva, GitHub</p>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Allecksis Gulley. All rights reserved.</p>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="mailto:magulley@ualr.edu">Email</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
+<script src="js/main.js"></script>
 </html>
