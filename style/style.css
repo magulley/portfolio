@@ -122,10 +122,13 @@ section {
   object-fit: contain;
 }
 
+/* About Me */
+.about {
+    background-color: #2c7ef4;
+}
 /* Portfolio */
 .portfolio {
     margin:0 auto;
-    background-color:#ffcb73;
 }
 
 /* Portfolio grid */
