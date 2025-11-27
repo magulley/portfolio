@@ -1,19 +1,48 @@
+/*Colors 
+#333; dark gray txt
+#f4f4f4; off white
+#007bff; blue
+#ffcb73; yellow
+#e34234; red
+#ebeadd; diff off-white (header)
+*/
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 html, body {
     height: 100%;
 }
 
-/* Layout */
+/* Global Styles */
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  color: #007bff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p {
+    color:#333;
+    font-family: poppins;
+
 }
 
 /* Header */
@@ -35,8 +64,11 @@ header {
     color: #ffcb73;
 }
 
-.logo a:visited {
-    color: #ffcb73;
+.logo a {
+    color:#ffcb73;
+}
+.logo a:hover {
+    color: #2c7ef4;
 }
 
 span {
@@ -55,6 +87,10 @@ nav a {
     text-decoration: none;
     color: #302e2e;
     font-weight: 500;
+}
+
+nav a:hover {
+    color:#2c7ef4;
 }
 
 /* Sections */
@@ -76,7 +112,7 @@ section {
 .hero-left {
   flex-basis: 60%;
   background: #000;
-  color: white;
+  color: #ffffff;
   padding: 6rem 4rem;
   display: flex;
   flex-direction: column;
@@ -84,16 +120,19 @@ section {
 }
 
 .hero-left h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.1;
   margin-bottom: 2rem;
+  font-family: "Climate Crisis", sans-serif;
 }
 
 .hero-left p {
   font-size: 1.25rem;
-  max-width: 450px;
+  
   line-height: 1.6;
+  color:#ebeadd;
 }
+
 .cta-btn {
     display: inline-block;
     background: #ff3838;
@@ -106,6 +145,9 @@ section {
     max-width:180px;
 }
 
+.cta-btn:hover {
+    color: black;
+}
 
 .hero-right {
   flex-basis: 40%;
@@ -125,29 +167,80 @@ section {
 /* About Me */
 .about {
     background-color: #2c7ef4;
+    color: #ebeadd;
+    padding: 4rem; 
 }
+
+.about h2 {
+    color: #ebeadd;
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+    font-family: "Climate Crisis", sans-serif;
+}
+
+.about-content-sidebar {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.profile-photo {
+ height: 300px;
+ width:300px;
+ object-fit: cover;
+ flex-shrink: 0;
+}
+
+.about-content-sidebar p {
+    flex: 1;
+    min-width: 250px;
+    line-height: 1.6;
+    color:#ebeadd;
+}
+
+
 /* Portfolio */
-.portfolio {
-    margin:0 auto;
-    background-color: #ebeadd;
+.portfolio-latest {
+    margin:0 auto; 
+    background-color: #fff;
+    padding-bottom: 2rem;
+}
+
+.portfolio-latest h2 {
+    font-family: "Climate Crisis", sans-serif;
+    padding-top:4rem;
+    padding-bottom:2rem;
+    padding-left:4rem;
+    font-size:1.8rem;
 }
 
 /* Portfolio grid */
-.portfolio-grid {
+.portfolio-grid-latest {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .project-card {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 .project-card img {
-    width: 100%;
-    border-radius: 8px;
+    width: 50%;
+    
 }
+
+.project-card h3 a {
+    color:orange;
+}
+
+.project-card h3 a:hover {
+    color:#ff3838;
+}
+
 
 /* Footer */
 footer {
@@ -289,7 +382,3 @@ hr {
 }
     */
 
-    /* Projects Page */
-    .container-projects {
-        background-color: #ebeadd;
-    }
