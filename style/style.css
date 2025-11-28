@@ -5,6 +5,7 @@
 #ffcb73; yellow
 #e34234; red
 #ebeadd; diff off-white (header)
+#efb2d2; light magenta
 */
 
 
@@ -90,7 +91,7 @@ nav a {
 }
 
 nav a:hover {
-    color:#2c7ef4;
+    color:#efb2d2;
 }
 
 /* Sections */
@@ -211,6 +212,7 @@ section {
 }
 
 .portfolio-latest h2 {
+    color: #ff3838;
     font-family: "Climate Crisis", sans-serif;
     padding-top:4rem;
     padding-bottom:2rem;
@@ -237,16 +239,17 @@ section {
 }
 
 .project-card h3 a {
-    color:orange;
+    color:#2c7ef4;
 }
 
 .project-card h3 a:hover {
-    color:#ff3838;
+    color:#efb2d2;
 }
 
 
 /* Footer */
 footer {
+    background-color: #efb2d2;
     text-align: center;
     padding: 1rem;
     border-top: 1px solid #ddd;
@@ -278,6 +281,7 @@ section.page-content h1 {
 .gallery-card {
     padding: 1rem;
     text-align: center;
+    background-color: #efb2d2;
     border:#000 1px solid;
 }
 
