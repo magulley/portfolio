@@ -205,7 +205,10 @@ section {
 /* Portfolio */
 .portfolio-latest {
     margin:0 auto; 
-    background-color: #fff;
+    background-color: #ebeadd;
+    background-image: url(../decorative-img/vecteezy_grid-over-horizontal-rectangle-paper-size-6x4-inch-or_.jpg);
+    background-position: center;
+    background-size: cover;
     padding-bottom: 2rem;
     padding-left:4rem;
     padding-right:4rem;
@@ -230,6 +233,7 @@ section {
     padding: 1rem;
     text-align: center;
     overflow:hidden;
+     border: 2px solid #efb2d2;
 }
 
 .project-card img {
@@ -238,7 +242,8 @@ section {
 }
 
 .project-card h3 a {
-    color:#2c7ef4;
+    color:#e34234;
+    font-size:1.2rem;
 }
 
 .project-card h3 a:hover {
@@ -249,13 +254,15 @@ section {
 /* Contact */
 
 .contact {
+    background-color: #000;
+    background-image: url(../decorative-img/vecteezy_grid-over-horizontal-rectangle-paper-size-6x4-inch-or_.jpg);
+    background-position: center;
+    background-size: cover;
     text-align:center;
-    padding-top:0;
+    padding-top:4rem;
     padding-right:1rem;
-    padding-bottom:2rem;
+    padding-bottom:4rem;
     padding-left:1rem;
-    margin-top:2rem;
-    margin-bottom:3rem;
  
 }
 
@@ -279,10 +286,17 @@ section {
 .contact-card {
     padding: 1rem;
     text-align: center;
+    background-color: #ebeadd;
     border: #ffcb73 solid 4px;
     border-radius: 10px;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+p.contact-card {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .contact-card a {
@@ -298,7 +312,7 @@ section {
 .contact-card i {
     font-size: 1.8rem;
     margin-right: 0.5rem;
-    color: #007bff;
+    color: #ff3838;
 }
 
 /* Footer */
