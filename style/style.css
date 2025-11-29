@@ -233,7 +233,7 @@ section {
     padding: 1rem;
     text-align: center;
     overflow:hidden;
-     border: 2px solid #efb2d2;
+     background-color: rgba(255, 255, 255, 0.4);
 }
 
 .project-card img {
@@ -254,21 +254,20 @@ section {
 /* Contact */
 
 .contact {
-    background-color: #000;
-    background-image: url(../decorative-img/vecteezy_grid-over-horizontal-rectangle-paper-size-6x4-inch-or_.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #2c7ef4; 
     text-align:center;
-    padding-top:4rem;
+    padding-top:6rem;
     padding-right:1rem;
     padding-bottom:4rem;
     padding-left:1rem;
+    margin-top:-2rem;
  
 }
 
 .contact h2 {
-    color: #007bff;
+    color: #ebeadd;
     font-family: "Climate Crisis", sans-serif;
+    letter-spacing: 3px;
     padding-top:2rem;
     padding: 0;
     font-size:1.8rem;
@@ -286,7 +285,6 @@ section {
 .contact-card {
     padding: 1rem;
     text-align: center;
-    background-color: #ebeadd;
     border: #ffcb73 solid 4px;
     border-radius: 10px;
     font-weight: 600;
@@ -294,13 +292,13 @@ section {
 }
 
 p.contact-card {
-    color: #007bff;
+    color: #ebeadd;
     font-weight: bold;
     text-decoration: none;
 }
 
 .contact-card a {
-    color: #007bff;
+    color: #ebeadd;
     font-weight: bold;
     text-decoration: none;
 }
