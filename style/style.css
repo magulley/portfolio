@@ -106,7 +106,7 @@ section {
 /* Hero*/
 .hero {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -296,9 +296,9 @@ section.page-content h1 {
 }
 
 summary {
-    cursor: pointer;
-  font-weight: bold;
-  padding: 5px 0;
+  display: block;
+  padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .gallery-card p {
