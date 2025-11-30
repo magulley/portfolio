@@ -227,6 +227,7 @@ section {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom:20px;
 }
 
 .project-card {
@@ -242,7 +243,7 @@ section {
 }
 
 .project-card h3 a {
-    color:#e34234;
+    color:#ff3838;
     font-size:1.2rem;
 }
 
@@ -254,9 +255,13 @@ section {
 /* Contact */
 
 .contact {
-    background-color: #2c7ef4; 
+    background-color: #2c7ef4;
+    background-image: url(../decorative-img/origami-duck.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: right; 
     text-align:center;
-    padding-top:6rem;
+    padding-top:3rem;
     padding-right:1rem;
     padding-bottom:4rem;
     padding-left:1rem;
@@ -268,7 +273,7 @@ section {
     color: #ebeadd;
     font-family: "Climate Crisis", sans-serif;
     letter-spacing: 3px;
-    padding-top:2rem;
+    
     padding: 0;
     font-size:1.8rem;
     margin-bottom:1rem;
@@ -325,6 +330,7 @@ footer {
 /* Portfolio page START*/
 
 .page-content {
+    background-color: #e0a0c1;
     max-width: 1100px;
     margin: 0 auto;
     padding: 4rem 1rem;
@@ -342,22 +348,26 @@ section.page-content h1 {
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top:2rem;
+    align-items: center;
+    
 }
 
 .gallery-card {
     padding: 1rem;
     text-align: center;
-    background-color: #efb2d2;
-    border:#000 1px solid;
+    background-color: #e8bcd3;
+    border:#ff3838 2px solid;
+    border-radius: 15px;;
 }
 
 .gallery-card img {
     width:50%;
-    
+   height:auto;
 }
 
 .gallery-card h3 {
     margin-top:1rem;
+    color:#ff3838;
     
 }
 
@@ -369,8 +379,16 @@ summary {
 
 .gallery-card p {
     margin: 0.5rem 1rem;
+    font-weight: 500;
 }
 
+.gallery-card a {
+    color:#076ee4;
+}
+
+.gallery-card a:hover {
+    color:#ff3838
+}
 
 
 
@@ -394,12 +412,12 @@ summary {
 .resume-header h1 {
     font-size: 2.8rem;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: "Climate Crisis", sans-serif;
     margin-bottom: 1rem;
 }
 
 .resume-header p a {
-    color: #333;
+    color: #ff3838
 }
 
 .resume-links {
@@ -414,7 +432,7 @@ summary {
 .resume-btn {
     display: inline-block;
     padding: 0.6rem 1.2rem;
-    background: #333;
+    background: #ffabd1;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -428,14 +446,14 @@ summary {
 
 /* Section styling */
 .resume-section {
-    margin: 3rem 0;
+    margin: 3rem auto;
 }
 
 .resume-section h2 {
     font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
     margin-bottom: 1rem;
-    color: #222;
+    color: #ff3838
 }
 
 /* Divider */
