@@ -339,15 +339,22 @@ footer {
 
 /* Portfolio page START*/
 
-.page-content {
+.portfolio-content {
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
     padding: 4rem 1rem;
     line-height: 1.7;
     text-align:center;
+    background-image: url(../decorative-img/laptop-lowopacity.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-section.page-content h1 {
+
+
+section.portfolio-content h1 {
   font-family: "Climate Crisis", sans-serif;
   font-size: 2.5rem;
   margin-bottom:40px;
@@ -364,7 +371,7 @@ section.page-content h1 {
 /* Project Card */
 .project-card {
   position: relative;
-  background: rgba(247, 208, 208, 0.4);
+  background: rgba(247, 208, 208, 0.437);
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
@@ -442,12 +449,17 @@ section.page-content h1 {
 
 .cover-letter h1 {
    font-family: "Climate Crisis", sans-serif;
+   
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom:1rem; 
 }
 
 .cover-letter ul {
+    background-image: url(../decorative-img/origami-duck.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: right;
     margin-bottom: 1rem;
     margin-top:1rem;
 }
@@ -465,7 +477,7 @@ section.page-content h1 {
     font-family: "Rock Salt", cursive;
     color: #076ee4;
     font-size:1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
 
 /* Resume Start*/
@@ -474,11 +486,15 @@ section.page-content h1 {
     margin: 0 auto;
     padding: 4rem 1rem;
     line-height: 1.7;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Header section */
 .resume-header {
+     background-image: url(../decorative-img/origami-duck.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: left;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -605,6 +621,12 @@ hr {
 
 /* Contact Page freefrontend*/
 
+
+.contact-pg {
+    background-image: url(../decorative-img/vecteezy_grid-over-horizontal-rectangle-paper-size-6x4-inch-or_.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .contact-card {
     margin-top:5rem;
     margin-bottom:4rem;
@@ -612,7 +634,7 @@ hr {
     margin-right:auto;
   width: 60%;
   padding: 30px 90px 90px 90px;
-  background: #ebeadd; 
+  background: #ffcc7348;
   border: 6px solid #efb2d2;
   border-radius: 50px;
   position: relative;
