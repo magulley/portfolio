@@ -9,8 +9,6 @@
 */
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -593,35 +591,10 @@ hr {
     font-size: 1rem;
 }
 
-/* MOBILE Resume 
-
-@media (max-width: 600px) {
-
-    .resume-header h1 {
-        font-size: 2.2rem;
-    }
-
-    .resume-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .resume-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .resume-item h3 {
-        font-size: 1.1rem;
-    }
-}
-    */
 /* Resume End*/
 
 
 /* Contact Page freefrontend*/
-
-
 .contact-pg {
     background-image: url(../decorative-img/vecteezy_grid-over-horizontal-rectangle-paper-size-6x4-inch-or_.jpg);
     background-position: center;
@@ -720,23 +693,233 @@ hr {
   color: #efb2d2;
 }
 
-/* ---- Queries ---- */
-@media screen and (max-width: 900px) {
-  .contact-card .row {
-    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
-  }
 
-  .contact-card {
-    padding: 20px;
-  }
 
-  .contact-card h2 {
-    font-size: 34px;
-  }
 
-  .contact-card .row input[type="submit"] {
-    width: 100%;
-    margin:0;
-  }
+/* ============================
+   GLOBAL & RESPONSIVE QUERIES
+   ============================ */
+@media (max-width: 786px) {
+
+    /* ----- IMAGES ----- */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ----- SECTIONS ----- */
+    section {
+        padding: 2rem 1rem !important;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* ----- HEADER ----- */
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    /* ----- HERO ----- */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-top: 3rem;
+    }
+
+    .hero-left {
+        padding: 0 1rem;
+    }
+
+    .hero-left h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-right {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .hero-graphic {
+        max-width: 70%;
+    }
+
+    /* ----- ABOUT ----- */
+    .about-content-sidebar {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .profile-photo {
+        margin: 0 auto;
+    }
+
+    .about-content-sidebar p {
+        margin-right: 0;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    /* ----- LATEST PROJECTS ----- */
+    .portfolio-latest {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .portfolio-grid-latest {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    /* ----- CONTACT (HOME & PAGE) ----- */
+    .contact,
+    .contact-pg {
+        text-align: center;
+        background-position: center;
+        padding: 2rem 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .contact-card-home {
+        font-size: 1rem;
+    }
+
+    .contact-card {
+        width: 90%;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .contact-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .row {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    .col {
+        margin: 0 !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100% !important;
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    input[type="submit"] {
+        margin-top: 1rem !important;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
 }
 
+
+/* ============================
+   MOBILE
+   ============================ */
+@media (max-width: 480px) {
+
+    /* ----- TEXT SIZES ----- */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1rem; }
+    p { font-size: 0.9rem; }
+
+    /* ----- HERO ----- */
+    .hero-left h1 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+        max-width: 140px;
+    }
+
+    /* ----- ABOUT ----- */
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content-sidebar p {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+
+    /* ----- PORTFOLIO ----- */
+    .portfolio-latest h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-card h3 a {
+        font-size: 1rem;
+    }
+
+    .project-card img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* ----- CONTACT ----- */
+    .contact h2,
+    .contact-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-card-home {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+
+    /* ----- FOOTER ----- */
+    footer p {
+        font-size: 0.85rem;
+    }
+}
